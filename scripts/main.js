@@ -1,6 +1,6 @@
 function logOut() {
-  window.location.href = "login.html";
-  history.replaceState({}, "", "login.html");
+  window.location.href = "index.html";
+  history.replaceState({}, "", "index.html");
 
   localStorage.setItem("currentUser", "");
 }
