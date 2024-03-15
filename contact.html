@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://kit.fontawesome.com/4dddd09fe6.js" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="icon" href="images/logo.svg">
+</head>
+
+<body class="background">
+    <header>
+        <nav class="header_nav">
+            <ul class="header_ul">
+                <i class="fa-solid fa-bars burger_icon"></i>
+                <li class="header_li">
+                    <a href="index.html" class="header_a">
+                        <button class="header_btn">Home</button>
+                    </a>
+                </li>
+                <li class="header_li">
+                    <a href="movies.html" class="header_a">
+                        <button class="header_btn">Movies</button>
+                    </a>
+                </li>
+                <li class="header_li">
+                    <a href="about.html" class="header_a">
+                        <button class="header_btn">About Us</button>
+                    </a>
+                </li>
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/netflix_logo.svg" alt="logo">
+                    </a>
+                </div>
+                <a href="index.html" class="logo_1020">
+                    <img src="images/logo.svg" alt="logo">
+                </a>
+                <li class="header_li">
+                    <a href="contact.html" class="header_a">
+                        <button class="header_btn active_btn">Contact</button>
+                    </a>
+                </li>
+                <a href="userInfo.html">
+                    <i class='bx bxs-user-circle user_icon'></i>
+                </a>
+                <li class="header_li">
+                    <button class="header_btn" onclick="logOut()">Log out</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="ftco-section contact_section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6 text-center mb-5">
+                    <h2 class="heading-section">Contact Us</h2>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-10 col-md-12">
+                    <div class="wrapper">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8 mb-5">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="dbox w-100 text-center">
+                                            <div class="icon d-flex align-items-center justify-content-center">
+                                                <span class="fa fa-map-marker"></span>
+                                            </div>
+                                            <div class="text">
+                                                <p><span>Address:</span> 198 West 21th Street, Suite 721 New York NY
+                                                    10016</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="dbox w-100 text-center">
+                                            <div class="icon d-flex align-items-center justify-content-center">
+                                                <span class="fa fa-phone"></span>
+                                            </div>
+                                            <div class="text">
+                                                <p><span>Phone:</span> <a href="tel://1234567920">+ 1235 2355 98</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="dbox w-100 text-center">
+                                            <div class="icon d-flex align-items-center justify-content-center">
+                                                <span class="fa fa-paper-plane"></span>
+                                            </div>
+                                            <div class="text">
+                                                <p><span>Email:</span> <a
+                                                        href="mailto:info@yoursite.com">info@yoursite.com</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-8">
+                                <div class="contact-wrap">
+                                    <h3 class="mb-4 text-center">Get in touch with us</h3>
+                                    <form id="contactForm" name="contactForm" class="contactForm">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" name="name" id="name"
+                                                        placeholder="Name">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <input type="email" class="form-control" name="email" id="email"
+                                                        placeholder="Email">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" name="subject" id="subject"
+                                                        placeholder="Subject">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <textarea name="message" class="form-control" id="message" cols="30"
+                                                        rows="8" placeholder="Message"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <button>Send Message</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="social_networks">
+            <p>Social Networks</p>
+            <div class="social_networks_icons">
+                <a href="https://www.facebook.com/profile.php?id=100008635938304" target="_blank">
+                    <i class="fa-brands fa-facebook facebook_icon"></i>
+                </a>
+                <a href="https://www.instagram.com/nika_bosto/" target="_blank">
+                    <i class="fa-brands fa-instagram instagram_icon"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/nika-bostoghanashvili-5288382ab/" target="_blank">
+                    <i class="fa-brands fa-linkedin-in linkedin_icon"></i>
+                </a>
+            </div>
+        </div>
+        <div class="footer_div">
+            <div class="footer_logo">
+                <img src="images/logo.svg" alt="logo">
+            </div>
+            <p>&copy All Rights Reserved. 2024</p>
+        </div>
+        <div class="footer_div">
+            <a href="https://www.google.com/maps/place/Vazisubani+Settlement,+%D0%A2%D0%B1%D0%B8%D0%BB%D0%B8%D1%81%D0%B8/@41.6956913,44.8575907,16z/data=!3m1!4b1!4m6!3m5!1s0x40440dbc8644923b:0xa1e3f5399328438b!8m2!3d41.6964103!4d44.8568749!16s%2Fg%2F12vt97gdl?entry=ttu"
+                target="_blank">Tbilisi,
+                Georgia</a>
+            <a href="mailto:bostoganashvilinika2019@gmail.com">bostoganashvilinika2019@gmail.com</a>
+            <a href="tel:+995 568 45 83 61">+995 568 45 83 61</a>
+        </div>
+    </footer>
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>
