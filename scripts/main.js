@@ -17,3 +17,14 @@ function readMore(index) {
     moreText.style.display = "none";
   }
 }
+
+let burger = document.querySelector(".burger_icon");
+let menu = document.getElementById("menu");
+
+function show() {
+  if (menu.style.display === "block") {
+    menu.style.display = "none";
+  } else {
+    menu.style.display = "block";
+  }
+}

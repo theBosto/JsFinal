@@ -28,6 +28,24 @@ header {
     color: black;
 }
 
+#menu {
+    display: none;
+    width: 15rem;
+    min-height: 15rem;
+    background-color: rgba(118, 74, 74, 0.5);
+
+}
+
+.header_btn2 {
+    border-radius: 1rem;
+    font-size: 1.3rem;
+    font-family: "Poppins", sans-serif;
+    transition: .2s;
+    padding: .4rem 2rem;
+    background-color: transparent;
+    border: none;
+}
+
 .header_btn {
     background-color: transparent;
     border: none;
