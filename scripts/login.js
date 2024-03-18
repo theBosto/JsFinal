@@ -33,7 +33,6 @@ function userLogin() {
 
   loginForm.addEventListener("submit", function (event) {
     event.preventDefault();
-    console.log(username, password);
   });
 
   for (let user = 0; user < usersData.length; user++) {

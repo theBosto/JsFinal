@@ -18,6 +18,7 @@ function readMore(index) {
   }
 }
 
+//burger bar
 let burger = document.querySelector(".burger_icon");
 let menu = document.getElementById("menu");
 
